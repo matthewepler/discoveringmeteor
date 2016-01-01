@@ -1,0 +1,19 @@
+<!-- 
+	acutal file name is unimportant 
+	template name must match what is in insertion point. see main.html
+
+	- SPACEBARS -
+	{{> foo}} = inclusion  - placeholder for template of the same name
+	{{bar}}   = expression - calls a property or return value of helper as defined
+	                         in template's manager
+	{{#if}}   = block helpers - flow control
+-->
+
+
+<template name="postsList">
+  <div class="posts">
+    {{#each posts}} <!-- posts is a template helper -->
+      {{> postItem}}
+    {{/each}}
+  </div>
+</template>
