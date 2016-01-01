@@ -1,1 +1,1 @@
-Meteor.subscribe('posts');
+// Meteor.subscribe('posts'); --> moved to lib/router.js
